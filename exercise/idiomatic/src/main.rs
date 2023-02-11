@@ -21,6 +21,7 @@ fn count_to_5() -> i32 {
 }
 fn main() {
     println!("I can count to {}", count_to_5());
+    println!("{}", test_func());
 }
 #[cfg(test)]
 
@@ -30,4 +31,8 @@ mod test {
     fn test_counting() {
         assert_eq!(count_to_5() == 5, true);
     }
+}
+
+fn test_func() -> bool {
+    true
 }
